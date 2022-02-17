@@ -1,0 +1,686 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE
+/*******************************************/
+html{
+  font-size: 10px;
+}
+body{
+  position: absolute;
+}
+body > *{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 4%;
+  color: black;
+}
+nav{
+  font-size: 1.4rem;
+}
+.icon{
+  font-size: 1.8rem;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+span{
+  color: #FF8800;
+}
+
+form{
+  color: lightgray;
+}
+label{
+  font-family: FontAwesome;
+  font-size: 13px;
+  position: relative;
+  right: 36.5%;
+}
+input{
+  padding: 10px;
+  padding-left: 30px;
+  border: 1px solid lightgray;
+  background: rgb(243, 243, 243);
+}
+button{
+  color: white;
+  background-color: #FF8800;
+  border: none;
+  padding: 10.7px;
+  border-radius: 4px;
+}
+
+h1,h2,h3,h4,h5{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+h1{
+  font-size: 7.4rem;
+  line-height: 70px;
+}
+h2{
+  font-size: 6rem;
+}
+
+p{
+  font-size: 1.8rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.logo{
+  margin-top: -20px;
+  height: auto;
+  width: 10%;
+}
+
+nav, nav ul{
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > *{
+  flex: 1;
+}
+
+main{
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+h1{
+  margin-bottom: 30px;
+}
+
+form{
+  margin-bottom: 50px;
+}
+
+main ul{
+  display: flex;
+  width: 30%;
+}
+main li{
+  flex: 1;
+}
+
+.second{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h2{
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+p{
+  line-height: 25px;
+}
+p + p{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.buttons{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.buttons button + button{
+  background-color: #ffab4b;
+  position: relative;
+  right: 2%;
+}
+
+.third{
+  padding-top: 100px;
+}
+.third h2, .third div:first-child{
+  width: 100%;
+  text-align: center;
+}
+
+.menu{
+  font-size: 1.6rem;
+  width: 50%;
+  margin: 30px auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.menu li{
+  display: flex;
+  text-align: center;
+  flex-basis: 20%;
+  border-bottom: 1px solid lightgray;
+}
+
+.menu a{
+  flex: 1;
+  padding-bottom: 15px;
+}
+
+.food{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.food li{
+  display: flex;
+  flex: 1;
+  flex-basis: 20%;
+  height: 300px;
+  width: 250px;
+  position: relative;
+}
+
+.food img{
+  width: 200px;
+  height: 300px;
+  flex: 1;
+}
+
+.dots{
+  width: 15%;
+  margin: auto;
+  text-align: center;
+}
+.dots > *{
+  margin-right: 10px;
+}
+
+.dots, .dots a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots i{
+  flex: 1;
+}
+
+.fourth{
+  padding-bottom: 80px;
+}
+
+.fourth .spanWrap{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.fourth > *:not(section){
+  text-align: center;
+}
+
+.fourth > section{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fourth > section >*{
+  flex: 1;
+  flex: 30%;
+}
+.fourth p{
+  margin: 5px 0;
+}
+.play-relative{
+  position: relative;
+}
+.play{
+  position: absolute;
+  left: 47%;
+  top: 47%;
+}
+
+.fifth div:first-child{
+  padding-top: 40px;
+}
+.fifth img{
+  border-radius: 50%;
+  padding: 20px 0;
+
+}
+
+.fifth > *{
+  text-align: center;
+}
+
+.fifth h3{
+  font-size: 2.4rem;
+}
+
+.fifth .stars{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.fifth  p{
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.fifth{
+  padding-bottom: 70px;
+}
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+footer ul > *{
+  flex: 1;
+}
+
+footer h3{
+  margin-bottom: 40px;
+}
+footer p{
+  margin: 10px 0;
+}
+
+footer input{
+  width: 83%;
+}
+footer  button{
+  position: absolute;
+  right: 25%;
+}
+.last{
+  padding-top: 10px;
+}
+
+.last{
+  display: flex;
+  border-top: 1px solid lightgray;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.last > *{
+  flex: 1;
+}
+.socialMedia{
+  justify-content: flex-end;
+  display: flex;
+  gap: 1%;
+}
+.socialMedia *{
+  flex: 0.1;
+  justify-self: center;
+  
+}
+.socialMedia i{
+  border: 1px solid #FF8800;
+  border-radius: 50%;
+  padding: 5px;
+}
+footer img{
+  height: auto;
+  width: 50%;
+}
+form{
+  display: flex;
+}
+
+/******************************************
+/*MODULE
+/*******************************************/
+.first{
+  background-image: url(../imgs/1.jpeg);
+  background-size: 100%;
+}
+.first button{
+  width: 8%;
+  position: relative;
+  right: 1.8%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+main input{
+  border-right: none;
+  width: 37%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+main ul {
+  font-size: 1.6rem;
+  color: #FF8800;
+}
+.second{
+  background-image: url(../imgs/2.jpeg);
+  background-size: 100%;
+}
+
+.orangeBackground{
+  background: #ff8800a2;
+  text-align: center;
+  border-radius: 10px;
+  width: 600px;
+  margin: auto;
+  
+}
+.second .orangeBackground *{
+  color: white;
+}
+
+.second a{
+  color: #FF8800;
+  font-weight: bold;
+}
+.buttons button:first-child{
+  border: none;
+  background-color: #FF8800;
+  padding: 10px 20px;
+}
+.second span{
+  color: white;
+}
+.third{
+  background: #F2F6F7;
+  
+}
+
+.dots i{
+  font-size: 0.8rem;
+  color: #ffbe73;
+}
+
+.fourth{
+  background-image: url(../imgs/mugs.jpg);
+  background-size: 100%;
+}
+
+.fourth i{
+  color: #FF8800;
+}
+
+i.fa-phone{
+  border: 1px solid #FF8800;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.fourth p +p{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.fourth span{
+  font-size: 1.4rem;
+}
+
+.spanBlack{
+  color: black;
+}
+
+.cellphone{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.8rem;
+  color: #FF8800;
+  font-weight: bold;
+}
+
+.play{
+  font-size: 7.4rem;
+}
+.fifth .spanBlack{
+  font-size: 1.4rem;
+  color: rgb(148, 148, 148);
+}
+
+footer{
+  background: #F2F6F7;
+  font-size: 1.4rem;
+}
+
+footer h3{
+  font-size: 2.6rem;
+  
+}
+footer a{
+  color: #FF8800;
+  text-decoration: underline;
+}
+
+footer button{
+  color: #FF8800;
+  background: none;
+}
+
+.socialMedia{
+  color: #FF8800;
+  font-size: 2.0rem;
+}
+footer form{
+  flex-direction: column;
+}
+footer input{
+  padding: 10px 3px;
+  width: 100%;
+}
+footer button{
+  position: static;
+  color: white;
+  background: #FF8800;
+}
+/******************************************
+/*STATE
+/*******************************************/
+.food, .food a{
+  color: white;
+}
+.menu li a:hover, .menu li a:focus{
+  color: #FF8800;
+  border-bottom: 1px solid #FF8800;
+}
+nav section{
+  display: none;
+}
+.invisible{
+  color: white;
+  position: absolute;
+  display: none;
+  padding-top: 20%;
+  height: 100%;
+}
+
+.invisible > *{
+  margin-top: 10px;
+}
+.invisible h3, .invisible p{
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+.stars i{
+  color: gold;
+}
+.food li:hover > .invisible{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+.food li:hover > img{
+  background-color: gray;
+}
+
+
+.aWrap{
+  display: flex;
+  width: 50%;
+  margin: 10px auto;
+  background-color: #FF8800;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.aWrap a{
+  flex: 1;
+}
+
+.dots i:hover, .dots a:focus i{
+  font-size: 1.4rem;
+  color: #FF8800;
+}
+
+.socialMedia a:hover i{
+  color: white;
+  background: #FF8800;
+}
+
+@media screen and (max-width: 1253px) {
+  
+  footer button{
+    right: 20%;
+  }
+
+  .first label{
+    position: relative;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .food{
+    flex-direction: column;
+  }
+  form >*{
+    font-size: 1rem;
+  }
+  .first label{
+    position: relative;
+    top: 12px;
+  }
+
+  footer img{
+    height: auto;
+    width: 20%;
+  }
+  footer p, footer span{
+    font-size: 1.5rem;
+  }
+  .play{
+    font-size: 5em;
+    left: 45%;
+    top: 45%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  html{
+    font-size: 9px;
+  }
+  nav ul{
+    flex: 2;
+  }
+  .first form{
+   flex-direction: column; 
+  }
+  .first form > *{
+    position: static;
+    width: 50%;
+    border-radius: 4px;
+  }
+  .first form label{
+    display: none;
+  }
+  main ul{
+    font-size: 1.4rem;
+  }
+    .menu{
+    width: 70%;
+  }
+  footer p, footer span{
+    font-size: 1.3rem;
+  }
+  .orangeBackground{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 560px){
+  html{
+    font-size: 8px;
+  }
+  nav{
+    flex-direction: column;
+    gap: 20px;
+  }
+  nav ul{
+    display: none;
+  }
+  nav div{
+    text-align: center;
+  }
+  .logo{
+    margin: 0;
+    width: 20%;
+  }
+  nav section{
+    display: block;
+    align-self: center;
+    font-size: 4rem;
+  }
+  main{
+    margin: 20px 0;
+  }
+  main > *{
+    align-items: center;
+    text-align: center;
+  }
+  main ul{
+    width: 30%;
+    margin-left: 35%;
+  }
+  h1{
+    font-size: 6rem;
+    text-align: left;
+  }
+  .second{
+    padding: 2%
+  }
+  h2{
+    font-size: 5.5rem;
+  }
+
+  footer ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }}
+
+@media screen and (max-width: 450px){
+  main ul{
+    font-size: 1.2rem;
+  }
+  
+}
